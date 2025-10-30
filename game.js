@@ -1,4 +1,3 @@
-// let player = "";
 let currentTurn = document.getElementById("currentTurn");
 
 let topLeftSq = document.getElementById("topLeftSq");
@@ -33,8 +32,7 @@ let resetButton = document.getElementById("resetButton");
 let xScore = 0;
 let oScore = 0;
 
-
-currentTurn.textContent = "X";
+currentTurn.textContent = "X"; // Player X gets to start the game
 
 topLeftSq.onclick = function () {
     let player = currentTurn.textContent;
@@ -64,6 +62,7 @@ topLeftSq.onclick = function () {
     }
     checkWin();
 }
+
 topCenterSq.onclick = function () {
     let player = currentTurn.textContent;
     if (player == "X") {
@@ -91,8 +90,8 @@ topCenterSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
+
 topRightSq.onclick = function () {
     let player = currentTurn.textContent;
     if (player == "X") {
@@ -120,7 +119,6 @@ topRightSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
 
 middleLeftSq.onclick = function () {
@@ -151,8 +149,8 @@ middleLeftSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
+
 middleCenterSq.onclick = function () {
     let player = currentTurn.textContent;
     if (player == "X") {
@@ -180,8 +178,8 @@ middleCenterSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
+
 middleRightSq.onclick = function () {
     let player = currentTurn.textContent;
 
@@ -210,7 +208,6 @@ middleRightSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
 
 bottomLeftSq.onclick = function () {
@@ -241,8 +238,8 @@ bottomLeftSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
+
 bottomCenterSq.onclick = function () {
     let player = currentTurn.textContent;
 
@@ -271,8 +268,8 @@ bottomCenterSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
+
 bottomRightSq.onclick = function () {
     let player = currentTurn.textContent;
     if (player == "X") {
@@ -300,7 +297,6 @@ bottomRightSq.onclick = function () {
         currentTurn.textContent = "X";
     }
     checkWin();
-
 }
 
 resetButton.onclick = function () {
@@ -327,10 +323,7 @@ resetButton.onclick = function () {
     // bottomRightSq.style.transition = "background-color 0.25s";
 
     // currentTurn.textContent = "X"; //turning this on will change the game alternating between player starts
-
-
 }
-
 
 function checkWin() {
 
@@ -446,7 +439,7 @@ function checkWin() {
         }
     }
 
-    //diagonal check
+    //DIAGONALS CHECK
     //diagonal 1
     else if ((topLeftInput.textContent != "") && (topLeftInput.textContent == middleCenterInput.textContent) && (middleCenterInput.textContent == bottomRightInput.textContent)) {
         window.alert(`Player ${topLeftInput.textContent} wins!`);
