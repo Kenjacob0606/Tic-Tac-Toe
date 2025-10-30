@@ -1,0 +1,195 @@
+ #topLeftSq {
+     position: relative;
+     /* display: flex; */
+     /* justify-content: center; */
+     /* align-items: center; */
+ }
+
+ #topLeftInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     z-index: 10;
+     /* z-index makes the X in front of the square since the square has a background colour of white, which makes the X behind the square*/
+ }
+
+ #topCenterSq {
+     position: relative;
+ }
+
+ #topCenterInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     z-index: 10;
+ }
+
+ #topRightSq {
+     position: relative;
+
+ }
+
+ #topRightInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ #middleLeftSq {
+     position: relative;
+
+ }
+
+ #middleLeftInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ #middleCenterSq {
+     position: relative;
+
+ }
+
+ #middleCenterInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ #middleRightSq {
+     position: relative;
+
+ }
+
+ #middleRightInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ #bottomLeftSq {
+     position: relative;
+
+ }
+
+ #bottomLeftInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ #bottomCenterSq {
+     position: relative;
+
+ }
+
+ #bottomCenterInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+ #bottomRightSq {
+     position: relative;
+
+ }
+
+ #bottomRightInput {
+     position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-size: 75px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+ #mainDiv {
+     display: grid;
+     grid-template-columns: repeat(3, 100px);
+     grid-template-rows: repeat(3, 100px);
+     gap: 10px;
+
+
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ #mainDiv>div {
+     /* position: absolute; */
+     width: 100px;
+     height: 100px;
+     background-color: white;
+     border: 1px solid rgb(214, 206, 206);
+     transition: background-color 0.25s;
+ }
+
+ #mainDiv>div:hover {
+     background-color: rgb(240, 145, 145);
+
+ }
+
+ #mainTitle {
+     text-align: center;
+ }
+
+ #resetButton {
+     position: absolute;
+     top: 64%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rebeccapurple;
+     color: aliceblue;
+ }
+
+ #xScore {
+     position: absolute;
+     top: 50%;
+     left: 34%;
+ }
+
+ #oScore {
+     position: absolute;
+     top: 50%;
+     left: 57%;
+ }
+
+ #currentTurn {
+     position: absolute;
+     top: 55%;
+     left: 64%;
+ }
+
+ #current {
+     position: absolute;
+     top: 53.9%;
+     left: 40%;
+ }
